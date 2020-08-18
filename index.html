@@ -5,20 +5,28 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="css/w3 css 4.13.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="css/typed.css">
-<style>
-body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
-.w3-row-padding img {margin-bottom: 12px}
-/* Set the width of the sidebar to 120px */
-.w3-sidebar {width: 120px;background: #222;}
-/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
-#main {margin-left: 120px}
-/* Remove margins from "page content" on small screens */
-@media only screen and (max-width: 600px) {#main {margin-left: 0}}
-</style>
+<!-- script -->
+<script src="js/jquery-3.4.1.min.js"></script>
+<script>
+  $(function(){
+    $(window).on("load",function(){
+      $(".loder-cont").css({
+        "display":"none"
+      })
+    })
+  })
+</script>
 <body class="w3-black">
+  <!-- Preloder -->
+  <section>
+    <div class="loder-cont">
+        <div class="loder"></div>
+    </div>
+  </section>
 
 <!-- Icon Bar (Sidebar - hidden on small screens) -->
 <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
@@ -40,6 +48,22 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
     <i class="fa fa-envelope w3-xxlarge"></i>
     <p>CONTACT</p>
   </a>
+  <div class="social-icons">
+    <a href="https://web.facebook.com/biplob.shaha.9655">
+      <i class="fa fa-facebook-official w3-hover-opacity"></i>
+  </a>
+  <a href="https://twitter.com/BiplobShaha1">
+      <i class="fa fa-twitter w3-hover-opacity"></i>
+  </a>
+  <a href="https://www.linkedin.com/in/biplob-shaha-905207191/">
+      <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </a>
+  <a href="https://www.linkedin.com/in/biplob-shaha-905207191/">
+      <span class="w3-hover-opacity" >
+          <img src="img/freelancer.png" width="20px">
+      </span>
+  </a>
+  </div>
 </nav>
 
 <!-- Navbar on small screens (Hidden on medium and large screens) -->
@@ -75,7 +99,15 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
     <div class="w3-white">
       <div class="w3-dark-grey" style="height:28px;width:95%"></div>
     </div>
-    <p class="w3-wide">Web Design</p>
+    <p class="w3-wide">Css</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:75%"></div>
+    </div>
+    <p class="w3-wide">BootStrap</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:75%"></div>
+    </div>
+    <p class="w3-wide">jQuery</p>
     <div class="w3-white">
       <div class="w3-dark-grey" style="height:28px;width:85%"></div>
     </div>
@@ -106,7 +138,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
     <button class="w3-button w3-light-grey w3-padding-large w3-section">
       <i class="fa fa-download"></i> <a href="files/my cv.docx" download>Download Resume</a>
     </button>
-    
+    <a href="files/my cv.pdf" class="w3-button w3-light-grey w3-padding-large w3-section" target="blank">View Resume</a>
     <!-- Grid for pricing tables -->
     <h3 class="w3-padding-16 w3-text-light-grey">My Price</h3>
     <div class="w3-row-padding" style="margin:0 -16px">
@@ -119,7 +151,16 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
             <span class="w3-opacity">per page</span>
           </li>
           <li class="w3-light-grey w3-padding-24">
-            <button class="w3-button w3-white w3-padding-large w3-hover-black">Sign Up</button>
+            <section class="btn_cont">
+              <button class="btn">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  Sign Up
+              </button>
+          </section>
+            <!-- <button class="w3-button w3-white w3-padding-large w3-hover-black"></button> -->
           </li>
         </ul>
       </div>
@@ -186,7 +227,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
     </div><br>
     <p>Let's get in touch. Send me a message:</p>
 
-    <form action="/action_page.php" target="_blank">
+    <form action="mailto:bipu7688@gmail.com" target="_blank">
       <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name"></p>
       <p><input class="w3-input w3-padding-16" type="text" placeholder="Email" required name="Email"></p>
       <p><input class="w3-input w3-padding-16" type="text" placeholder="Subject" required name="Subject"></p>
@@ -202,7 +243,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
   
     <!-- Footer -->
   <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
-      <a href="https://web.facebook.com/biplob.shaha.9655">
+    <a href="https://web.facebook.com/biplob.shaha.9655">
         <i class="fa fa-facebook-official w3-hover-opacity"></i>
     </a>
     <a href="https://twitter.com/BiplobShaha1">
@@ -216,6 +257,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
             <img src="img/freelancer.png" width="20px">
         </span>
     </a>
+    
     <div class="w3-medium">
         <h4>Desing by</h4>
         <h2>Biplob Shaha</h2>
